@@ -23,11 +23,10 @@ Two CUDA implementations are provided:
 ## 📁 Repository Structure
 
 blurred_img/
-├── blur_kernel.cu # Naive CUDA blur kernel
-├── image_blur_tiled.cu # Tiled shared-memory kernel (experimental)
-├── lodepng.h
-├── lodepng.cpp
-├── blurred_img.py # Optional helper or Colab script
+├── blur_img.py
+├── initial_img.png
+├── blurred_size_2.png
+├── tiled_blurred_size_5.png
 └── README.md
 
 ## ⚙️ Build Instructions
