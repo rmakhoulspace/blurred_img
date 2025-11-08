@@ -6,7 +6,7 @@ using [LodePNG](https://github.com/lvandeve/lodepng) for image decoding and enco
 
 ---
 
-## 🧠 Overview
+Overview
 
 The program loads an input PNG image, applies a box blur on the **RGBA** channels using CUDA,  
 and saves the result as a new PNG file.
@@ -20,7 +20,7 @@ Two CUDA implementations are provided:
 
 ---
 
-## 📁 Repository Structure
+Repository Structure
 
 blurred_img/
 ├── blur_img.py
@@ -29,7 +29,7 @@ blurred_img/
 ├── tiled_blurred_size_5.png
 └── README.md
 
-## ⚙️ Build Instructions
+Build Instructions
 
 Ensure that you have the **CUDA Toolkit** installed and `nvcc` available on your PATH.
 
@@ -39,10 +39,10 @@ nvcc -arch=sm_75 blur_kernel.cu lodepng.cpp -o blur_naive
 
 Compile the tiled version:: nvcc -arch=sm_75 image_blur_tiled.cu lodepng.cpp -o blur_tiled
 
-▶️ Run the Program
+Run the Program
 ./blur_naive test.png blurred.png
 
-🧮 Algorithm Summary
+Algorithm Summary
 
 Each thread computes one output pixel:
 
